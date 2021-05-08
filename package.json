@@ -1,0 +1,16 @@
+{
+  "name": "git-flow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "li.huan <li.huan@synyi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "husky": "^6.0.0",
+    "pinst": "^2.1.6"
+  },
+  "scripts": {
+    "preinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
+  }
+}
